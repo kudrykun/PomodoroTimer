@@ -11,23 +11,19 @@
 
 @implementation PairedRingButtons
 
-double gap = 20;
+double gap = 35; //TODO: Maybe I should think about it
 
 -(instancetype) initWithFrame:(CGRect)frame {
-    
     float side = (frame.size.width - gap) / 2;
     frame.size.height = side;
     self = [super initWithFrame:frame];
     
     if(self)
     {
-        //TEMP
-        [self setBackgroundColor:[UIColor blueColor]];
-    
+        self.animationTime = 0.3;
         _leftButton = [RingButton buttonWithType:UIButtonTypeCustom];
         [_leftButton setTitle:@"Left" forState:UIControlStateNormal];
         [_leftButton setFrame:CGRectMake(0, 0, side, side)];
-        _leftButton.titleLabel.font = [UIFont systemFontOfSize: 12];
         [self addSubview:_leftButton];
 
         _rightButton = [RingButton buttonWithType:UIButtonTypeCustom];
@@ -39,8 +35,16 @@ double gap = 20;
     return self;
 }
 
+-(instancetype) initWithButtonSide: (float) theSide andGap: (float) theGap {
+    gap = theGap;
+    CGRect frame = CGRectMake(0, 0, 2*theSide + theGap, theSide);
+    self = [self initWithFrame:frame];
+    
+    return self;
+}
+
 -(void) close {
-    [UIView animateWithDuration:0.5 animations:^(void){
+    [UIView animateWithDuration:_animationTime animations:^(void){
         [self->_leftButton setAlpha: 0.0f];
         [self->_rightButton setAlpha: 0.0f];
         
@@ -51,7 +55,7 @@ double gap = 20;
 }
 
 -(void) open {
-    [UIView animateWithDuration:0.5 animations:^(void){
+    [UIView animateWithDuration:_animationTime animations:^(void){
         [self->_leftButton setAlpha: 1.0f];
         [self->_rightButton setAlpha: 1.0f];
         

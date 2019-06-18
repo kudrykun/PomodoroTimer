@@ -14,7 +14,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface PairedRingButtons : UIView
 @property(nonatomic, readonly) RingButton *leftButton, *rightButton;
+@property(nonatomic, assign) NSTimeInterval animationTime;
 
+-(instancetype) initWithButtonSide: (float) theSide andGap: (float) theGap;
 -(void) close;
 -(void) open;
 @end

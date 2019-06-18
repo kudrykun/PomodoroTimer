@@ -16,6 +16,7 @@
 		FA6ED92F22B7B1B0009898E0 /* PomodoroTimerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FA6ED92E22B7B1B0009898E0 /* PomodoroTimerTests.m */; };
 		FA6ED93A22B7B1B0009898E0 /* PomodoroTimerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FA6ED93922B7B1B0009898E0 /* PomodoroTimerUITests.m */; };
 		FA6ED94922B82F16009898E0 /* RingButton.m in Sources */ = {isa = PBXBuildFile; fileRef = FA6ED94822B82F16009898E0 /* RingButton.m */; };
+		FA6ED94D22B90B86009898E0 /* PairedRingButtons.m in Sources */ = {isa = PBXBuildFile; fileRef = FA6ED94C22B90B86009898E0 /* PairedRingButtons.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,8 @@
 		FA6ED93B22B7B1B0009898E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA6ED94722B82F16009898E0 /* RingButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RingButton.h; sourceTree = "<group>"; };
 		FA6ED94822B82F16009898E0 /* RingButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RingButton.m; sourceTree = "<group>"; };
+		FA6ED94B22B90B86009898E0 /* PairedRingButtons.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PairedRingButtons.h; sourceTree = "<group>"; };
+		FA6ED94C22B90B86009898E0 /* PairedRingButtons.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PairedRingButtons.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +87,7 @@
 		FA6ED90922B7B1AF009898E0 = {
 			isa = PBXGroup;
 			children = (
+				FA6ED94A22B90B32009898E0 /* CustomViews */,
 				FA6ED91422B7B1AF009898E0 /* PomodoroTimer */,
 				FA6ED92D22B7B1B0009898E0 /* PomodoroTimerTests */,
 				FA6ED93822B7B1B0009898E0 /* PomodoroTimerUITests */,
@@ -113,8 +117,6 @@
 				FA6ED92022B7B1B0009898E0 /* LaunchScreen.storyboard */,
 				FA6ED92322B7B1B0009898E0 /* Info.plist */,
 				FA6ED92422B7B1B0009898E0 /* main.m */,
-				FA6ED94722B82F16009898E0 /* RingButton.h */,
-				FA6ED94822B82F16009898E0 /* RingButton.m */,
 			);
 			path = PomodoroTimer;
 			sourceTree = "<group>";
@@ -135,6 +137,17 @@
 				FA6ED93B22B7B1B0009898E0 /* Info.plist */,
 			);
 			path = PomodoroTimerUITests;
+			sourceTree = "<group>";
+		};
+		FA6ED94A22B90B32009898E0 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				FA6ED94722B82F16009898E0 /* RingButton.h */,
+				FA6ED94822B82F16009898E0 /* RingButton.m */,
+				FA6ED94B22B90B86009898E0 /* PairedRingButtons.h */,
+				FA6ED94C22B90B86009898E0 /* PairedRingButtons.m */,
+			);
+			path = CustomViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,6 +284,7 @@
 				FA6ED92522B7B1B0009898E0 /* main.m in Sources */,
 				FA6ED91722B7B1AF009898E0 /* AppDelegate.m in Sources */,
 				FA6ED94922B82F16009898E0 /* RingButton.m in Sources */,
+				FA6ED94D22B90B86009898E0 /* PairedRingButtons.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

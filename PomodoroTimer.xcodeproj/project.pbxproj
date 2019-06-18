@@ -15,6 +15,7 @@
 		FA6ED92522B7B1B0009898E0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FA6ED92422B7B1B0009898E0 /* main.m */; };
 		FA6ED92F22B7B1B0009898E0 /* PomodoroTimerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FA6ED92E22B7B1B0009898E0 /* PomodoroTimerTests.m */; };
 		FA6ED93A22B7B1B0009898E0 /* PomodoroTimerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FA6ED93922B7B1B0009898E0 /* PomodoroTimerUITests.m */; };
+		FA6ED94922B82F16009898E0 /* RingButton.m in Sources */ = {isa = PBXBuildFile; fileRef = FA6ED94822B82F16009898E0 /* RingButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		FA6ED93522B7B1B0009898E0 /* PomodoroTimerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PomodoroTimerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA6ED93922B7B1B0009898E0 /* PomodoroTimerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PomodoroTimerUITests.m; sourceTree = "<group>"; };
 		FA6ED93B22B7B1B0009898E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA6ED94722B82F16009898E0 /* RingButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RingButton.h; sourceTree = "<group>"; };
+		FA6ED94822B82F16009898E0 /* RingButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RingButton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +113,8 @@
 				FA6ED92022B7B1B0009898E0 /* LaunchScreen.storyboard */,
 				FA6ED92322B7B1B0009898E0 /* Info.plist */,
 				FA6ED92422B7B1B0009898E0 /* main.m */,
+				FA6ED94722B82F16009898E0 /* RingButton.h */,
+				FA6ED94822B82F16009898E0 /* RingButton.m */,
 			);
 			path = PomodoroTimer;
 			sourceTree = "<group>";
@@ -265,6 +270,7 @@
 				FA6ED91A22B7B1AF009898E0 /* ViewController.m in Sources */,
 				FA6ED92522B7B1B0009898E0 /* main.m in Sources */,
 				FA6ED91722B7B1AF009898E0 /* AppDelegate.m in Sources */,
+				FA6ED94922B82F16009898E0 /* RingButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -86,9 +86,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FA1267FF22CE1E8900C40BEA /* PomodoroTimerCoreData */ = {
+			isa = PBXGroup;
+			children = (
+				FA1267FC22CE13F300C40BEA /* PomodoroTimerModel.xcdatamodeld */,
+			);
+			name = PomodoroTimerCoreData;
+			sourceTree = "<group>";
+		};
 		FA6ED90922B7B1AF009898E0 = {
 			isa = PBXGroup;
 			children = (
+				FA1267FF22CE1E8900C40BEA /* PomodoroTimerCoreData */,
 				FA6ED94A22B90B32009898E0 /* CustomViews */,
 				FA6ED91422B7B1AF009898E0 /* PomodoroTimer */,
 				FA6ED92D22B7B1B0009898E0 /* PomodoroTimerTests */,
@@ -119,7 +128,6 @@
 				FA6ED92022B7B1B0009898E0 /* LaunchScreen.storyboard */,
 				FA6ED92322B7B1B0009898E0 /* Info.plist */,
 				FA6ED92422B7B1B0009898E0 /* main.m */,
-				FA1267FC22CE13F300C40BEA /* PomodoroTimerModel.xcdatamodeld */,
 			);
 			path = PomodoroTimer;
 			sourceTree = "<group>";
@@ -220,6 +228,7 @@
 				TargetAttributes = {
 					FA6ED91122B7B1AF009898E0 = {
 						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
 					};
 					FA6ED92922B7B1B0009898E0 = {
 						CreatedOnToolsVersion = 10.2.1;
@@ -459,6 +468,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 953U9784PC;
 				INFOPLIST_FILE = PomodoroTimer/Info.plist;
@@ -468,6 +478,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.vasilenko.PomodoroTimer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -476,6 +488,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 953U9784PC;
 				INFOPLIST_FILE = PomodoroTimer/Info.plist;
@@ -485,6 +498,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.vasilenko.PomodoroTimer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -611,7 +625,8 @@
 				FA1267FD22CE13F300C40BEA /* PomodoroTimerModel.xcdatamodel */,
 			);
 			currentVersion = FA1267FD22CE13F300C40BEA /* PomodoroTimerModel.xcdatamodel */;
-			path = PomodoroTimerModel.xcdatamodeld;
+			name = PomodoroTimerModel.xcdatamodeld;
+			path = PomodoroTimer/PomodoroTimerModel.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
